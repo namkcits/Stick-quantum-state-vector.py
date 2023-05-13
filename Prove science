@@ -1,0 +1,11 @@
+# This code demonstrates measuring a quantum statevector
+from qiskit.quantum_info import Statevector
+
+# Create the statevector to be measured
+state = Statevector([0.70710678-0.70710678j, 0.0+0.0j], dims=(2,))
+
+# Measure the statevector
+result = state.measure()
+
+# Print the measurement result
+print(result)  # Returns either 0 or 1 with probabilities |0.5-0.5j|^2 and 0, respectively
