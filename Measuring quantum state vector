@@ -1,3 +1,5 @@
+from qiskit.quantum_info import Statevector
+
 # This code demonstrates measuring a quantum statevector
 from qiskit.quantum_info import Statevector
 
